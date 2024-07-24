@@ -14,7 +14,7 @@ const getNowPlaying = async (page: string) => {
     }
 };
 
-    const getOnTv = async (page: string) => {
+    const getOnTv = async () => {
         try {
         const response = await API.get("tv/on_the_air?language=en-US&page=1");
             
@@ -27,7 +27,7 @@ const getNowPlaying = async (page: string) => {
     };
         export { getOnTv };
 
-    const getTopRate = async (page: string) => {
+    const getTopRate = async () => {
         try {
         const response = await API.get("movie/top_rated?language=en-US&page=1");
             

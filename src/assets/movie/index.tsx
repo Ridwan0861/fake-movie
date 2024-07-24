@@ -19,7 +19,7 @@ function Home() {
 
   const fetchTopRate = async () => {
     try {
-      const response = await getTopRate(page as string);
+      const response = await getTopRate();
       setNowTopRate(response);
     } catch (error) {
       console.log(error);

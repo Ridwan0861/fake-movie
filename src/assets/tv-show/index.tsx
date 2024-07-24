@@ -20,7 +20,7 @@ const Home = () => {
   const fetchTv = async () => {
     try {
       setLoading(true);
-      const response = await getOnTv(page as string);
+      const response = await getOnTv();
       setNowPlayingData(response);
     } catch (error) {
       console.log(error);
@@ -37,10 +37,6 @@ const Home = () => {
   const handlingPage = () => {
     const numPage = Number(page);
     navigate(`?page=${numPage - 1}`);
-  };
-
-  const toDetailMovie = (id: number) => {
-    navigate(`detail/${id}`);
   };
 
   return (

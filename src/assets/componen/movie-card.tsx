@@ -1,5 +1,4 @@
 import LazyLoad from "react-lazyload";
-import { useNavigate } from "react-router-dom";
 
 interface Props {
   title: string;
